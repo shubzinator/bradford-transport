@@ -1,10 +1,11 @@
-$brand-primary: darken(#ffa519, 6.5%);
+$brand-primary: #ff9317;
+$brand-secondary: #efefef;
 
 @import "bootstrap-compass";
 @import "bootstrap-variables";
 @import "bootstrap";
 
-$margin: 20px;
+$marginPadding: 20px;
 
 header {
   .branding {
@@ -12,25 +13,62 @@ header {
 
     .heading {
       font-weight: 700;
-      margin: $margin;
+      margin: $marginPadding;
     }
 
     .subtitle {
       font-size: 1.3em;
-      margin: $margin;
+      margin: $marginPadding;
     }
   }
 
   nav {
+    background: $brand-secondary;
+    padding: 15px;
+
     ul {
-      
+      margin: 0px;
+
+      li:first-child {
+        margin-left: 0px;
+      }
+
+      li:last-child {
+        margin-right: 0px;
+      }
 
       li {
         display: inline-block;
-        margin:$margin;
         font-weight: bold;
+        margin-right: 50px;
+      }
+
+      li:before {
+        content: "\0BB \020";
+        vertical-align: text-bottom;
       }
     }
+  }
+}
 
+.content {
+  border-left: 1px solid $brand-secondary;
+  border-right: 1px solid $brand-secondary;
+  padding: $marginPadding 0 $marginPadding 0;
+
+  .homepage-contact-form {
+    textarea {
+      min-height: 250px;
+    }
+  }
+}
+
+footer {
+  padding: 20px;
+  background: $brand-secondary;
+  color: $brand-primary;
+
+  p {
+    margin: 0px;
   }
 }

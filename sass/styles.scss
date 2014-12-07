@@ -1,10 +1,36 @@
+$brand-primary: darken(#ffa519, 6.5%);
+
 @import "bootstrap-compass";
 @import "bootstrap-variables";
 @import "bootstrap";
 
-$bt-orange: #ffa519;
+$margin: 20px;
 
-h1 {
-  font-weight: 500;
-  color: $bt-orange;
+header {
+  .branding {
+    background: $brand-primary;
+
+    .heading {
+      font-weight: 700;
+      margin: $margin;
+    }
+
+    .subtitle {
+      font-size: 1.3em;
+      margin: $margin;
+    }
+  }
+
+  nav {
+    ul {
+      
+
+      li {
+        display: inline-block;
+        margin:$margin;
+        font-weight: bold;
+      }
+    }
+
+  }
 }

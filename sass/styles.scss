@@ -1,0 +1,10 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+$bt-orange: #ffa519;
+
+h1 {
+  font-weight: 500;
+  color: $bt-orange;
+}
